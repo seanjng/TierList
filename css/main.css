@@ -37,8 +37,8 @@ h4 {
   border: #444 solid 2px; }
 
 .attButton:hover, .card:hover {
-  color: #000;
-  border: #000 solid 2px;
+  color: #000 !important;
+  border: #000 solid 2px !important;
   transition: color .2s ease; }
 
 .attButton:focus {

@@ -111,7 +111,7 @@
 
         <h4>Insane (5)</h4>
       </div>
-      <div class="col-xs-11 col-offset-1">
+      <div class="col-xs-12">
         <div id="insane" class="row row-header">
           <button ng-repeat="card in cards | filter:isRating(5) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
             <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
@@ -121,7 +121,7 @@
       <div class="col-xs-12">
         <h4>Excellent (4)</h4>
       </div>
-      <div class="col-xs-11 col-offset-1">
+      <div class="col-xs-12">
         <div id="excellent" class="row row-header">
           <button ng-repeat="card in cards | filter:isRating(4) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
             <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
@@ -131,7 +131,7 @@
       <div class="col-xs-12">
         <h4>Good (3)</h4>
       </div>
-      <div class="col-xs-11 col-offset-1">
+      <div class="col-xs-12">
         <div id="good" class="row row-header">
           <button ng-repeat="card in cards | filter:isRating(3) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
             <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
@@ -141,7 +141,7 @@
       <div class="col-xs-12">
         <h4>Average (2)</h4>
       </div>
-      <div class="col-xs-11 col-offset-1">
+      <div class="col-xs-12">
         <div id="average" class="row row-header">
           <button ng-repeat="card in cards | filter:isRating(2) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
             <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
@@ -151,7 +151,7 @@
       <div class="col-xs-12">
         <h4>Poor (1)</h4>
       </div>
-      <div class="col-xs-11 col-offset-1">
+      <div class="col-xs-12">
         <div id="poor" class="row row-header">
           <button ng-repeat="card in cards | filter:isRating(1) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
             <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
@@ -161,7 +161,7 @@
       <div class="col-xs-12">
         <h4>Terrible (0)</h4>
       </div>
-      <div class="col-xs-11 col-offset-1">
+      <div class="col-xs-12">
         <div id="terrible" class="row row-header">
           <button ng-repeat="card in cards | filter:isRating(0) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
             <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>

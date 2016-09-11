@@ -72,8 +72,8 @@ h4 {
     border: $black solid 2px;
 }
 .attButton:hover {
-    color: $darkerBlack;
-    border: $darkerBlack solid 2px;
+    color: $darkerBlack !important;
+    border: $darkerBlack solid 2px !important;
     transition: color .2s ease;
 }
 .attButton:focus {
