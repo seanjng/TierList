@@ -1,0 +1,64 @@
+$unclicked: #aaa;
+
+.redBG { background-color: $red; }
+.blueBG { background-color: $blue; }
+.yellowBG { background-color: $yellow; }
+.greenBG { background-color: $green; }
+.purpleBG { background-color: $purple; }
+.grayBG { background-color: $gray; }
+.whiteBG { background-color: $white; }
+.blackBG { background-color: $black; }
+.dkYellowBG { background-color: $dkYellow; }
+.dkPurpleBG { background-color: $dkPurple; }
+.dkBlueBG { background-color: $dkBlue; }
+.dkGreenBG { background-color: $dkGreen; }
+.red { color: $red; }
+.blue { color: $blue; }
+.yellow { color: $yellow; }
+.green { color: $green; }
+.purple { color: $purple; }
+.gray { color: $gray; }
+.white { color: $white; }
+.black { color: $black; }
+.dkYellow { color: $dkYellow; }
+.dkPurple { color: $dkPurple; }
+.dkBlue { color: $dkBlue; }
+.dkGreen { color: $dkGreen; }
+
+.unclicked { background-color: $white !important; }
+
+.diamond {
+	height: 20px;
+	width: 20px;
+	display: inline-block;
+	border-radius: 10px;
+}
+.strength { border: $red solid 2px; }
+.intelligence { border: $blue solid 2px; }
+.willpower { border: $yellow solid 2px; }
+.agility { border: $green solid 2px; }
+.endurance { border: $purple solid 2px; }
+.neutral { border: $gray solid 2px; }
+
+@mixin mixed-border($first, $second) {
+	border-left: $first solid 2px !important;
+	border-top: $first solid 2px !important;
+	border-right: $second solid 2px !important;
+	border-bottom: $second solid 2px !important;
+}
+
+.strint { @include mixed-border($red, $blue); }
+.strwil { @include mixed-border($red, $yellow); }
+.stragi { @include mixed-border($red, $green); }
+.strend { @include mixed-border($red, $purple); }
+.intwil { @include mixed-border($blue, $yellow); }
+.intagi { @include mixed-border($blue, $green); }
+.intend { @include mixed-border($blue, $purple); }
+.wilagi { @include mixed-border($yellow, $green); }
+.wilend { @include mixed-border($yellow, $purple); }
+.agiend { @include mixed-border($green, $purple); }
+
+.legendaryBG { @extend .diamond; background-color: $dkYellow; }
+.epicBG { @extend .diamond; background-color: $dkPurple; }
+.rareBG { @extend .diamond; background-color: $dkBlue; }
+.commonBG { @extend .diamond; background-color: $dkGreen; }

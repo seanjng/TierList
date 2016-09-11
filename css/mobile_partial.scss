@@ -1,0 +1,5 @@
+.smShow { display: none; }
+@media (max-width: $xs-screen-max) {
+    .smShow { display: inline; }
+    .smHide { display: none; }
+}

@@ -1,0 +1,137 @@
+$background-light: #eee;
+$background-less-light: #ccc;
+$font-stack:  'Montserrat', 'Open Sans', sans-serif;
+$montserrat: 'Montserrat', sans-serif;
+$open: 'Open Sans', sans-serif;
+
+// Screen Sizes
+$xs-screen-max: 767px;
+$sm-screen-min: 768px;
+$sm-screen-max: 991px;
+$md-screen-min: 992px;
+$md-screen-max: 1199px;
+$lg-screen-min: 1200px;
+
+// Colors
+$red: #e84c3c;
+$blue: #3499dc;
+$yellow: #ffce01;
+$green: #2dcd72;
+$purple: #755ec6;
+$gray: #96a5a6;
+$white: #ddd;
+$darkerWhite: #fff;
+$black: #444;
+$darkerBlack: #000;
+$dkGreen: #27ae61;
+$dkBlue: #2980ba;
+$dkPurple: #5b48a3;
+$dkYellow: #ffa900;
+
+html {
+    width: 100%;
+    height: 100%;
+}
+body {
+    background: $background-light;
+    font-family: $font-stack !important;
+    color: $black;
+    height: 100%;
+}
+
+.montserrat {
+    font-family: $montserrat !important;
+}
+.open {
+    font-family: $open !important;
+}
+
+.main {
+    height: 100%;
+}
+
+h3 {
+    font-size: 22px;
+}
+h4 {
+    font-size: 18px;
+}
+
+.page-header {
+    border-bottom-color: $black;
+}
+.noBottomMargin {
+    margin-bottom: 0;
+}
+
+.attButton {
+    width: 50px;
+    height: 50px;
+    margin: 0 1px 5px 1px;
+    color: $black;
+    border: $black solid 2px;
+}
+.attButton:hover {
+    color: $darkerBlack;
+    border: $darkerBlack solid 2px;
+    transition: color .2s ease;
+}
+.attButton:focus {
+    color: $darkerBlack !important;
+    border: $darkerBlack solid 2px;
+}
+.glyph {
+    margin-left: -3px;
+    margin-top: 2px;
+}
+
+.sort {
+    margin-top: 10px;
+}
+.sortlabel {
+    font-size: 16px;
+    margin-right: 10px;
+}
+.sortButton {
+    color: $black;
+    border: $black solid 2px;
+}
+.sortButton:hover {
+    color: $darkerBlack;
+    border: $darkerBlack solid 2px;
+    transition: color .2s ease;
+}
+.sortButton:focus {
+    color: $darkerBlack !important;
+    border: $darkerBlack solid 2px;
+}
+.searchResult {
+    padding: 2px auto 2px 2px !important;
+    margin-bottom: 4px;
+    width: inherit;
+}
+.searchResult:hover {
+    background-color: #eee;
+}
+
+.card {
+    @extend .black;
+    @extend .whiteBG;
+    margin: auto 5px 5px auto !important;
+    font-size: 14px;
+}
+.card:hover {
+    @extend .attButton:hover;
+}
+
+.footer {
+    min-height: 200px;
+    vertical-align: middle;
+}
+.disclaimer {
+    font-size: 12px;
+}
+
+@import 'mobile_partial';
+
+@import 'attributes_partial';
