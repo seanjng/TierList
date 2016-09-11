@@ -123,6 +123,11 @@ h4 {
 .card:hover {
     @extend .attButton:hover;
 }
+.tooltip.bottom > .tooltip-arrow, .tooltip.top > .tooltip-arrow, .tooltip > .tooltip-inner {
+    background-color: rgba(0,0,0,0);
+    border-bottom-color: rgba(0,0,0,0);
+    border-top-color: rgba(0,0,0,0)
+}
 
 .footer {
     min-height: 200px;

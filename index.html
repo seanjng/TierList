@@ -12,6 +12,8 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">  
   <link href="css/attributeFont/flaticon.css" rel="stylesheet">
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
   <script src="app.js"></script>
@@ -108,13 +110,12 @@
     <!--    Card List -->
     <div class="row">
       <div class="col-xs-12">
-
         <h4>Insane (5)</h4>
       </div>
       <div class="col-xs-12">
         <div id="insane" class="row row-header">
-          <button ng-repeat="card in cards | filter:isRating(5) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+          <a data-toggle="tooltip" title="<img style='height:300px; width:auto' src='{{card.stats.image}}' />" data-html="true" data-placement="auto bottom" ng-repeat="card in cards | filter:isRating(5) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" tooltip>
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</a>
         </div>
       </div>
       
@@ -123,8 +124,8 @@
       </div>
       <div class="col-xs-12">
         <div id="excellent" class="row row-header">
-          <button ng-repeat="card in cards | filter:isRating(4) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+          <a data-toggle="tooltip" title="<img style='height:300px; width:auto' src='{{card.stats.image}}' />" data-html="true" data-placement="auto bottom" ng-repeat="card in cards | filter:isRating(4) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" tooltip>
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</a>
         </div>
       </div>
       
@@ -133,8 +134,8 @@
       </div>
       <div class="col-xs-12">
         <div id="good" class="row row-header">
-          <button ng-repeat="card in cards | filter:isRating(3) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+          <a data-toggle="tooltip" title="<img style='height:300px; width:auto' src='{{card.stats.image}}' />" data-html="true" data-placement="auto bottom" ng-repeat="card in cards | filter:isRating(3) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" tooltip>
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</a>
         </div>
       </div>
       
@@ -143,8 +144,8 @@
       </div>
       <div class="col-xs-12">
         <div id="average" class="row row-header">
-          <button ng-repeat="card in cards | filter:isRating(2) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+          <a data-toggle="tooltip" title="<img style='height:300px; width:auto' src='{{card.stats.image}}' />" data-html="true" data-placement="auto bottom" ng-repeat="card in cards | filter:isRating(2) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" tooltip>
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</a>
         </div>
       </div>
       
@@ -153,8 +154,8 @@
       </div>
       <div class="col-xs-12">
         <div id="poor" class="row row-header">
-          <button ng-repeat="card in cards | filter:isRating(1) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+          <a data-toggle="tooltip" title="<img style='height:300px; width:auto' src='{{card.stats.image}}' />" data-html="true" data-placement="auto bottom" ng-repeat="card in cards | filter:isRating(1) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" tooltip>
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</a>
         </div>
       </div>
       
@@ -163,8 +164,8 @@
       </div>
       <div class="col-xs-12">
         <div id="terrible" class="row row-header">
-          <button ng-repeat="card in cards | filter:isRating(0) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+          <a data-toggle="tooltip" title="<img style='height:300px; width:auto' src='{{card.stats.image}}' />" data-html="true" data-placement="auto bottom" ng-repeat="card in cards | filter:isRating(0) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" tooltip>
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</a>
         </div>
       </div>
     </div>
@@ -197,9 +198,6 @@
   </div>
   </div>
 
-
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
   <script src="main.js"></script>
 </body>
 </html>

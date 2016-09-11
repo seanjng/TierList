@@ -3,7 +3,6 @@ var app = angular.module('arenaTierList', []);
 app.controller('arenaTierListController', function($scope, $http) {
     $http.get('./cards.json').then(function(response) {
         $scope.cards = response.data;
-        // console.log(response.data)
     });
 
     $scope.sortType = 'name';
@@ -27,5 +26,20 @@ app.controller('arenaTierListController', function($scope, $http) {
         
     $scope.sortBy = function(sort) {
         $scope.sortType = sort;
+    };
+});
+
+app.directive('tooltip', function(){
+    return {
+        restrict: 'A',
+        link: function(scope, element, attrs){
+            $('[data-toggle=tooltip]').hover(function(){
+                // on mouseenter
+                $(this).tooltip('show');
+            }, function(){
+                // on mouseleave
+                $(this).tooltip('hide');
+            });
+        }
     };
 });

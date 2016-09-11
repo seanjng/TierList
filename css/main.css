@@ -81,6 +81,11 @@ h4 {
   margin: auto 5px 5px auto !important;
   font-size: 14px; }
 
+.tooltip.bottom > .tooltip-arrow, .tooltip.top > .tooltip-arrow, .tooltip > .tooltip-inner {
+  background-color: transparent;
+  border-bottom-color: transparent;
+  border-top-color: transparent; }
+
 .footer {
   min-height: 200px;
   vertical-align: middle; }

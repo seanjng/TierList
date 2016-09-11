@@ -33,6 +33,7 @@ function updateShowing(event) {
         }
     }
 
+    // for dual attribute cards
     for (var i = 0; i < dualAttributes.length; i++) {
         for (var j = 2; j < 4; j++) {
             str = dualAttributesList[i]+rarityList[j];
@@ -45,8 +46,8 @@ function updateShowing(event) {
     }
 }
 
-$(document).load(setTimeout(function() {
-    // updateShowing();
-    $('.card').hide();
-    $('.common.neutral').show();
+$(document).on('load', setTimeout(function() {
+//    $('.card').hide();
+//    $('.common.neutral').show();
+    updateShowing();
 }, 200));
