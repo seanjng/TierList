@@ -22,3 +22,7 @@ I found a tier list to help with picks, but did not like the Google Sheet interf
 
 * [The Lightforge](http://thelightforge.com/TierList) & GrinningGoat for all the arena tier list and tips and tricks
 * CVH and [Between The Lanes](https://betweenthelanes.net/arena-tier-list/) for the TESLegends tier list
+
+### License
+
+[See LICENSE](https://github.com/hizinfiz/TierList/blob/gh-pages/LICENSE)
