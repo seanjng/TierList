@@ -103,7 +103,8 @@
       <button class="btn unclicked clearButton" ng-click="clearPulled()">Clear Search</button>
     </div>
     <div class="col-xs-12 col-sm-6 xsResults">
-      <button class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" ng-repeat="card in pulledCards"><badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}} - {{card.stats.rating}}</button>
+      <a data-toggle="tooltip" title="<img style='height:300px; width:auto' src='{{card.stats.image}}' />" data-html="true" data-placement="auto bottom" href="{{card.stats.url}}" target="_blank" ng-repeat="card in pulledCards" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" tooltip>
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}} - {{card.stats.rating}}</a>
     </div>
   </div>
 
