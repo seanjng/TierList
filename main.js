@@ -22,7 +22,7 @@ function updateShowing(event) {
     var str = "";
     var num = [];
     // for single attribute cards
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 7; i++) {
         for (var j = 0; j < 4; j++) {
             str = attributeList[i]+rarityList[j];
             if (attributeShow[i] === 1 && rarityShow[j] === 1) {
