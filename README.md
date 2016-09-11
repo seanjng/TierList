@@ -2,6 +2,8 @@
 
 ![forthebadge](http://forthebadge.com/images/badges/made-with-crayons.svg) ![forthebadge](http://forthebadge.com/images/badges/designed-in-ms-paint.svg)
 
+[See it live here](http://tsunderedev.moe/TierList/)
+
 I decided to give the TES: Legends beta a try, and instantly gravitated towards the Solo and VS Arena game modes, mainly because Arena in Hearthstone is my favorite game mode (not that I'm any good at it).
 
 I found a tier list to help with picks, but did not like the Google Sheet interface. So I decided to try creating something like TheLightforge.
@@ -12,12 +14,14 @@ I found a tier list to help with picks, but did not like the Google Sheet interf
 * Show/hide cards based on attribute & rarity
 * Sort cards alphabetically or by name
 * Card searching, get up to 3 cards for quick comparison when making picks
+* Cards link back to Legends-Decks
+* Card tooltips when hovering over a card
 
 ### Planned in the future
 
-* Card tooltips
+* Press enter to pull the first result in card search
 * Nightmode
-* Random UI changes
+* Random UI changes/improvements
 
 ### Credits
 

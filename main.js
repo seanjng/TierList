@@ -50,4 +50,4 @@ $(document).on('load', setTimeout(function() {
 //    $('.card').hide();
 //    $('.common.neutral').show();
     updateShowing();
-}, 200));
+}, 300));
