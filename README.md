@@ -15,6 +15,7 @@ I found a tier list to help with picks, but did not like the Google Sheet interf
 
 ### Planned in the future
 
+* Card tooltips
 * Nightmode
 * Random UI changes
 

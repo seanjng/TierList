@@ -2,193 +2,204 @@
 
 <html lang="en" ng-app="arenaTierList">
 <head>
-	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Elder Scrolls Legends - Arena Tier List</title>
-	
-	<link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-	<link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
-	<link href="css/main.css" rel="stylesheet">  
-	<link href="css/attributeFont/flaticon.css" rel="stylesheet">
-	<script src="bower_components/angular/angular.js"></script>
-	<script src="bower_components/angular-route/angular-route.js"></script>
-	<script src="app.js"></script> 
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Elder Scrolls Legends - Arena Tier List</title>
+  
+  <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">  
+  <link href="css/attributeFont/flaticon.css" rel="stylesheet">
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63817004-1', 'auto');
+    ga('send', 'pageview');
+
+  </script>
 </head>
 
 <body>
-	<div class="container main" ng-controller="arenaTierListController">
-		<!--    Header  -->
-		<div class="row row-header">
-			<div class="page-header col-xs-12 text-center noBottomMargin">
-				<h1 class="smHide">Elder Scrolls Legends - Arena Tier List</h1>
-				<h1 class="smShow">ESL - Arena Tier List</h1>
-			</div>
-		</div>
-		
-    <!--    Card Selector   -->
-		<div class="row row-header text-center">
-			<div class="col-xs-12 col-sm-6">
-				<div class="col-xs-12">
-					<h3>Attributes</h3>
-				</div>
+  <div class="container main" ng-controller="arenaTierListController">
+    <!--    Header  -->
+    <div class="row row-header">
+      <div class="page-header col-xs-12 text-center noBottomMargin">
+        <h1 class="smHide">Elder Scrolls Legends - Arena Tier List</h1>
+        <h1 class="smShow">ESL - Arena Tier List</h1>
+      </div>
+    </div>
+    
+  <!--    Card Selector   -->
+    <div class="row row-header text-center">
+      <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12">
+          <h3>Attributes</h3>
+        </div>
 
-				<div class="col-xs-12">
-					<button type="button" id="A0" class="btn btn-lg redBG unclicked attButton" value="Strength">
-						<span class="glyph flaticon flaticon-biceps" aria-hidden="true"></span></button>
-					<button type="button" id="A1" class="btn btn-lg blueBG unclicked attButton" value="Intelligence">
-						<span class="glyph flaticon flaticon-school" aria-hidden="true"></span></button>
-					<button type="button" id="A2" class="btn btn-lg yellowBG unclicked attButton" value="Willpower">
-						<span class="glyph flaticon flaticon-leo-lion-head-side" aria-hidden="true"></span></button>
-					<button type="button" id="A3" class="btn btn-lg greenBG unclicked attButton" value="Agility">
-						<span class="glyph flaticon flaticon-circle" aria-hidden="true"></span></button>
-					<button type="button" id="A4" class="btn btn-lg purpleBG unclicked attButton" value="Endurance">
-						<span class="glyph flaticon flaticon-black" aria-hidden="true"></span></button>
-				</div>
-			 </div>
+        <div class="col-xs-12">
+          <button type="button" id="A0" class="btn btn-lg redBG unclicked attButton" value="Strength">
+            <span class="glyph flaticon flaticon-biceps" aria-hidden="true"></span></button>
+          <button type="button" id="A1" class="btn btn-lg blueBG unclicked attButton" value="Intelligence">
+            <span class="glyph flaticon flaticon-school" aria-hidden="true"></span></button>
+          <button type="button" id="A2" class="btn btn-lg yellowBG unclicked attButton" value="Willpower">
+            <span class="glyph flaticon flaticon-leo-lion-head-side" aria-hidden="true"></span></button>
+          <button type="button" id="A3" class="btn btn-lg greenBG unclicked attButton" value="Agility">
+            <span class="glyph flaticon flaticon-circle" aria-hidden="true"></span></button>
+          <button type="button" id="A4" class="btn btn-lg purpleBG unclicked attButton" value="Endurance">
+            <span class="glyph flaticon flaticon-black" aria-hidden="true"></span></button>
+        </div>
+       </div>
 
-			<div class="col-xs-12 col-sm-6">
-				<div class="col-xs-12">
-					<h3>Rarity</h3>
-				</div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="col-xs-12">
+          <h3>Rarity</h3>
+        </div>
 
-				<div class="col-xs-12">
-					<button type="button" id="R0" class="btn btn-lg dkGreenBG attButton" value="Common">
-						<span class="glyph glyphicon glyphicon-pawn" aria-hidden="true"></span></button>
-					<button type="button" id="R1" class="btn btn-lg dkBlueBG unclicked attButton" value="Rare">
-						<span class="glyph glyphicon glyphicon-bishop" aria-hidden="true"></span></button>
-					<button type="button" id="R2" class="btn btn-lg dkPurpleBG unclicked attButton" value="Epic">
-						<span class="glyph glyphicon glyphicon-queen" aria-hidden="true"></span></button>
-					<button type="button" id="R3" class="btn btn-lg dkYellowBG unclicked attButton" value="Legendary">
-						<span class="glyph glyphicon glyphicon-king" aria-hidden="true"></span></button>
-				</div>
-			</div>
-		</div>
-
-    <!--    Card Sorting & Search   -->
-		<div class="row text-center sort">
-        <div class="col-xs-12" style="padding-bottom: 10px;">
-            <label class="sortlabel">Sort By:</label>
-            <div class="btn-group">
-                <button type="button" id="Cost" class="btn btn-lg unclicked sortButton" ng-click="sortBy('stats.cost')">Cost</button>
-                <button type="button" id="Alphabetical" class="btn btn-lg unclicked sortButton" ng-click="sortBy('name')">Alphabetical</button>
-            </div>
+        <div class="col-xs-12">
+          <button type="button" id="R0" class="btn btn-lg dkGreenBG attButton" value="Common">
+            <span class="glyph glyphicon glyphicon-pawn" aria-hidden="true"></span></button>
+          <button type="button" id="R1" class="btn btn-lg dkBlueBG unclicked attButton" value="Rare">
+            <span class="glyph glyphicon glyphicon-bishop" aria-hidden="true"></span></button>
+          <button type="button" id="R2" class="btn btn-lg dkPurpleBG unclicked attButton" value="Epic">
+            <span class="glyph glyphicon glyphicon-queen" aria-hidden="true"></span></button>
+          <button type="button" id="R3" class="btn btn-lg dkYellowBG unclicked attButton" value="Legendary">
+            <span class="glyph glyphicon glyphicon-king" aria-hidden="true"></span></button>
         </div>
-        <div class="col-xs-2 col-sm-1 sort col-sm-offset-0">
-            <label class="sortlabel text-right">Search:</label>
-        </div>
-        <div class="col-xs-6 col-sm-3">
-            <input type="text" class="form-control" id="cardSearch" placeholder="Card Name" ng-model="$search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-            <ul class="dropdown-menu" style="left: 15px;" aria-labelledby="cardSearch">
-                <li class="black searchResult open {{card.stats.rarity}} {{card.stats.attribute}}" ng-repeat="card in cards | filter:$search | orderBy:'name' | limitTo:5" ng-click="pullCard(card)">{{card.name}}</li>
-            </ul>
-        </div>
-        <div class="col-xs-2 text-left">
-            <button class="btn unclicked sortButton" ng-click="clearPulled()">Clear Search</button>
-        </div>
-        <div class="col-xs-12 col-sm-6">
-            <button class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" ng-repeat="card in pulledCards"><badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}} - {{card.stats.rating}}</button>
-        </div>
+      </div>
     </div>
 
-    <div class="col-xs-12" style="height: 10px; border-bottom: #444 solid 1px;"></div>
-      
-		<!--    Card List -->
-		<div class="row">
-			<div class="col-xs-12">
-
-				<h4>Insane (5)</h4>
-			</div>
-			<div class="col-xs-11 col-offset-1">
-				<div id="insane" class="row row-header">
-					<button ng-repeat="card in cards | filter:isRating(5) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-						<badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
-				</div>
-			</div>
-			
-			<div class="col-xs-12">
-				<h4>Excellent (4)</h4>
-			</div>
-			<div class="col-xs-11 col-offset-1">
-				<div id="excellent" class="row row-header">
-					<button ng-repeat="card in cards | filter:isRating(4) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-						<badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
-				</div>
-			</div>
-			
-			<div class="col-xs-12">
-				<h4>Good (3)</h4>
-			</div>
-			<div class="col-xs-11 col-offset-1">
-				<div id="good" class="row row-header">
-					<button ng-repeat="card in cards | filter:isRating(3) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-						<badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
-				</div>
-			</div>
-			
-			<div class="col-xs-12">
-				<h4>Average (2)</h4>
-			</div>
-			<div class="col-xs-11 col-offset-1">
-				<div id="average" class="row row-header">
-					<button ng-repeat="card in cards | filter:isRating(2) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-						<badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
-				</div>
-			</div>
-			
-			<div class="col-xs-12">
-				<h4>Poor (1)</h4>
-			</div>
-			<div class="col-xs-11 col-offset-1">
-				<div id="poor" class="row row-header">
-					<button ng-repeat="card in cards | filter:isRating(1) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-						<badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
-				</div>
-			</div>
-			
-			<div class="col-xs-12">
-				<h4>Terrible (0)</h4>
-			</div>
-			<div class="col-xs-11 col-offset-1">
-				<div id="terrible" class="row row-header">
-					<button ng-repeat="card in cards | filter:isRating(0) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
-						<badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
-				</div>
-			</div>
-		</div>
-    
-    <div style="padding: 20px"></div>
-    <!--    Footer  -->
-    <div class="row row-footer open footer">
-        <div class="col-xs-6 col-sm-4 col-sm-offset-2">
-            <ul class="list-unstyled">
-                <li>Created by Sean Ng / hizinfiz</li>
-                <li><a href="https://github.com/hizinfiz/TierList">Github</a> | <a href="https://www.reddit.com/user/hizinfiz/submitted/">Reddit</a></li>
-            </ul>
-        </div>
-        <div class="col-xs-6 col-sm-4">
-            <ul class="list-unstyled">
-                <li>Tier List by CVH from <a href="https://betweenthelanes.net/arena-tier-list/">Between The Lanes</a></li>
-                <li>Last Updated on 09/10/16</li>
-            </ul>
-        </div>
-        <div class="col-xs-12" style="padding: 15px"></div>
-        <div class="col-xs-12 disclaimer">
-            <span><a href="https://legends.bethesda.net/">The Elder Scrolls: Legends</a> assets used on this site are copyrighted and/or trademarked materials of <a href="https://bethesda.net/">Bethesda Softworks LLC</a>. This site is not affiliated with <a href="https://bethesda.net/">Bethesda Softworks LLC</a>.</span>
-        </div>
-        <div class="col-xs-12 disclaimer">
-            <span><a href="https://legends.bethesda.net/">The Elder Scrolls: Legends</a> card images appearing on this site are hosted by <a href="http://www.legends-decks.com/">Legends Decks.</a></span>
-        </div>
-        <div class="col-xs-12 disclaimer">
-            <span>Icon fonts used in Attribute picker <a href="http://www.flaticon.com/authors/freepik">designed by Freepik from Flaticon</a>.</span>
-        </div>
+  <!--    Card Sorting & Search   -->
+    <div class="row text-center sort">
+    <div class="col-xs-12" style="padding-bottom: 10px;">
+      <label class="sortlabel">Sort By:</label>
+      <div class="btn-group">
+        <button type="button" id="Cost" class="btn btn-lg unclicked sortButton" ng-click="sortBy('stats.cost')">Cost</button>
+        <button type="button" id="Alphabetical" class="btn btn-lg unclicked sortButton" ng-click="sortBy('name')">Alphabetical</button>
+      </div>
+    </div>
+    <div class="col-xs-2 col-sm-1 sort col-sm-offset-0">
+      <label class="sortlabel text-right">Search:</label>
+    </div>
+    <div class="col-xs-6 col-sm-3">
+      <input type="text" class="form-control" id="cardSearch" placeholder="Card Name" ng-model="$search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+      <ul class="dropdown-menu" style="left: 15px;" aria-labelledby="cardSearch">
+        <li class="black searchResult open {{card.stats.rarity}} {{card.stats.attribute}}" ng-repeat="card in cards | filter:$search | orderBy:'name' | limitTo:5" ng-click="pullCard(card)">{{card.name}}</li>
+      </ul>
+    </div>
+    <div class="col-xs-2 text-left">
+      <button class="btn unclicked sortButton" ng-click="clearPulled()">Clear Search</button>
+    </div>
+    <div class="col-xs-12 col-sm-6">
+      <button class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" ng-repeat="card in pulledCards"><badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}} - {{card.stats.rating}}</button>
     </div>
   </div>
 
+  <div class="col-xs-12" style="height: 10px; border-bottom: #444 solid 1px;"></div>
+    
+    <!--    Card List -->
+    <div class="row">
+      <div class="col-xs-12">
 
-	<script src="bower_components/jquery/dist/jquery.min.js"></script>
-	<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="main.js"></script>
+        <h4>Insane (5)</h4>
+      </div>
+      <div class="col-xs-11 col-offset-1">
+        <div id="insane" class="row row-header">
+          <button ng-repeat="card in cards | filter:isRating(5) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+        </div>
+      </div>
+      
+      <div class="col-xs-12">
+        <h4>Excellent (4)</h4>
+      </div>
+      <div class="col-xs-11 col-offset-1">
+        <div id="excellent" class="row row-header">
+          <button ng-repeat="card in cards | filter:isRating(4) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+        </div>
+      </div>
+      
+      <div class="col-xs-12">
+        <h4>Good (3)</h4>
+      </div>
+      <div class="col-xs-11 col-offset-1">
+        <div id="good" class="row row-header">
+          <button ng-repeat="card in cards | filter:isRating(3) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+        </div>
+      </div>
+      
+      <div class="col-xs-12">
+        <h4>Average (2)</h4>
+      </div>
+      <div class="col-xs-11 col-offset-1">
+        <div id="average" class="row row-header">
+          <button ng-repeat="card in cards | filter:isRating(2) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+        </div>
+      </div>
+      
+      <div class="col-xs-12">
+        <h4>Poor (1)</h4>
+      </div>
+      <div class="col-xs-11 col-offset-1">
+        <div id="poor" class="row row-header">
+          <button ng-repeat="card in cards | filter:isRating(1) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+        </div>
+      </div>
+      
+      <div class="col-xs-12">
+        <h4>Terrible (0)</h4>
+      </div>
+      <div class="col-xs-11 col-offset-1">
+        <div id="terrible" class="row row-header">
+          <button ng-repeat="card in cards | filter:isRating(0) | orderBy:sortType" class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" type="button" title="">
+            <badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}}</button>
+        </div>
+      </div>
+    </div>
+  
+  <div style="padding: 20px"></div>
+  <!--    Footer  -->
+  <div class="row row-footer open footer">
+    <div class="col-xs-6 col-sm-4 col-sm-offset-2">
+      <ul class="list-unstyled">
+        <li>Created by Sean Ng / hizinfiz</li>
+        <li><a href="https://github.com/hizinfiz/TierList">Github</a> | <a href="https://www.reddit.com/user/hizinfiz/submitted/">Reddit</a></li>
+      </ul>
+    </div>
+    <div class="col-xs-6 col-sm-4">
+      <ul class="list-unstyled">
+        <li>Tier List by CVH from <a href="https://betweenthelanes.net/arena-tier-list/">Between The Lanes</a></li>
+        <li>Last Updated on 09/10/16</li>
+      </ul>
+    </div>
+    <div class="col-xs-12" style="padding: 15px"></div>
+    <div class="col-xs-12 disclaimer">
+      <span><a href="https://legends.bethesda.net/">The Elder Scrolls: Legends</a> assets used on this site are copyrighted and/or trademarked materials of <a href="https://bethesda.net/">Bethesda Softworks LLC</a>. This site is not affiliated with <a href="https://bethesda.net/">Bethesda Softworks LLC</a>.</span>
+    </div>
+    <div class="col-xs-12 disclaimer">
+      <span><a href="https://legends.bethesda.net/">The Elder Scrolls: Legends</a> card images appearing on this site are hosted by <a href="http://www.legends-decks.com/">Legends Decks.</a></span>
+    </div>
+    <div class="col-xs-12 disclaimer">
+      <span>Icon fonts used in Attribute picker <a href="http://www.flaticon.com/authors/freepik">designed by Freepik from Flaticon</a>.</span>
+    </div>
+  </div>
+  </div>
+
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
