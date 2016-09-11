@@ -92,16 +92,16 @@ h4 {
     font-size: 16px;
     margin-right: 10px;
 }
-.sortButton {
+.sortButton, .clearButton {
     color: $black;
     border: $black solid 2px;
 }
-.sortButton:hover {
+.sortButton:hover, .clearButton:hover {
     color: $darkerBlack;
     border: $darkerBlack solid 2px;
     transition: color .2s ease;
 }
-.sortButton:focus {
+.sortButton:focus, clearButton:hover {
     color: $darkerBlack !important;
     border: $darkerBlack solid 2px;
 }

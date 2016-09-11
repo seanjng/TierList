@@ -80,14 +80,14 @@
   <!--    Card Sorting & Search   -->
     <div class="row text-center sort">
     <div class="col-xs-12" style="padding-bottom: 10px;">
-      <label class="sortlabel">Sort By:</label>
+      <label class="sortlabel montserrat">Sort By:</label>
       <div class="btn-group">
         <button type="button" id="Cost" class="btn btn-lg unclicked sortButton" ng-click="sortBy('stats.cost')">Cost</button>
         <button type="button" id="Alphabetical" class="btn btn-lg unclicked sortButton" ng-click="sortBy('name')">Alphabetical</button>
       </div>
     </div>
     <div class="col-xs-2 col-sm-1 sort col-sm-offset-0">
-      <label class="sortlabel text-right">Search:</label>
+      <label class="sortlabel text-right montserrat">Search:</label>
     </div>
     <div class="col-xs-6 col-sm-3">
       <input type="text" class="form-control" id="cardSearch" placeholder="Card Name" ng-model="$search" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
@@ -96,9 +96,9 @@
       </ul>
     </div>
     <div class="col-xs-2 text-left">
-      <button class="btn unclicked sortButton" ng-click="clearPulled()">Clear Search</button>
+      <button class="btn unclicked clearButton" ng-click="clearPulled()">Clear Search</button>
     </div>
-    <div class="col-xs-12 col-sm-6">
+    <div class="col-xs-12 col-sm-6 xsResults">
       <button class="card btn {{card.stats.rarity}} {{card.stats.attribute}}" ng-repeat="card in pulledCards"><badge class="white {{card.stats.rarity}}BG">{{card.stats.cost}}</badge> {{card.name}} - {{card.stats.rating}}</button>
     </div>
   </div>

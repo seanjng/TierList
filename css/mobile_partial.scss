@@ -3,3 +3,36 @@
     .smShow { display: inline; }
     .smHide { display: none; }
 }
+
+@media (max-width: $xs-screen-max) {
+    h1 {
+        font-size: 22px; 
+    }
+    h3 {
+        font-size: 18px;
+    }
+    h4 {
+        font-size: 14px;
+    }
+    .sortButton {
+        font-size: 18px;
+    }
+    .card {
+        font-size: 10px;
+        padding: 1px 5px;
+        vertical-align: middle;
+    }
+    .legendaryBG, .epicBG, .rareBG, .commonBG {
+        height: 14px !important;
+        width: 14px !important;
+    }
+    .xsResults {
+        margin-top: 5px;
+    }
+    .footer {
+        font-size: 12px;
+    }
+    .disclaimer {
+        font-size: 10px;
+    }
+}
