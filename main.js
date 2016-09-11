@@ -49,4 +49,4 @@ $(document).load(setTimeout(function() {
     // updateShowing();
     $('.card').hide();
     $('.common.neutral').show();
-}, 500));
+}, 200));
