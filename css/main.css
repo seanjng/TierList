@@ -3,9 +3,9 @@ html {
   height: 100%; }
 
 body {
-  background: #eee;
+  background: #fafafa;
   font-family: "Montserrat", "Open Sans", sans-serif !important;
-  color: #444;
+  color: #333;
   height: 100%; }
 
 .montserrat {
@@ -24,7 +24,7 @@ h4 {
   font-size: 18px; }
 
 .page-header {
-  border-bottom-color: #444; }
+  border-bottom-color: #333; }
 
 .noBottomMargin {
   margin-bottom: 0; }
@@ -33,8 +33,8 @@ h4 {
   width: 50px;
   height: 50px;
   margin: 0 1px 5px 1px;
-  color: #444;
-  border: #444 solid 2px; }
+  color: #333;
+  border: #333 solid 2px; }
 
 .attButton:hover, .card:hover {
   color: #000 !important;
@@ -57,8 +57,8 @@ h4 {
   margin-right: 10px; }
 
 .sortButton, .clearButton {
-  color: #444;
-  border: #444 solid 2px; }
+  color: #333;
+  border: #333 solid 2px; }
 
 .sortButton:hover, .clearButton:hover {
   color: #000;
@@ -151,10 +151,10 @@ h4 {
   background-color: #96a5a6; }
 
 .whiteBG, .card {
-  background-color: #ddd; }
+  background-color: #eee; }
 
 .blackBG {
-  background-color: #444; }
+  background-color: #333; }
 
 .dkYellowBG {
   background-color: #ffa900; }
@@ -187,10 +187,10 @@ h4 {
   color: #96a5a6; }
 
 .white {
-  color: #ddd; }
+  color: #eee; }
 
 .black, .card {
-  color: #444; }
+  color: #333; }
 
 .dkYellow {
   color: #ffa900; }
@@ -205,7 +205,7 @@ h4 {
   color: #27ae61; }
 
 .unclicked {
-  background-color: #ddd !important; }
+  background-color: #eee !important; }
 
 .diamond, .legendaryBG, .epicBG, .rareBG, .commonBG {
   height: 20px;
